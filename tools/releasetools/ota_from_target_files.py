@@ -1286,6 +1286,8 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   # Dump fingerprints
   script.Print("Target: {}".format(target_info.fingerprint))
 
+  script.AppendExtra("ifelse(is_mounted(\"/system\"), unmount(\"/system\"));")
+
   script.Print("***********************************************")
   script.Print("*    .___          __   ________     _________*")
   script.Print("*  __| _/  ____  _/  |_ \_____  \   /   _____/*")
