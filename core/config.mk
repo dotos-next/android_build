@@ -236,7 +236,7 @@ FIND_LEAVES_EXCLUDES := $(addprefix --prune=, $(SCAN_EXCLUDE_DIRS) .repo .git)
 -include vendor/extra/BoardConfigExtra.mk
 
 ifneq ($(CUSTOM_BUILD),)
-include vendor/dot/config/BoardConfig.mk
+include vendor/dot/config/BoardConfigDot.mk
 endif
 
 # The build system exposes several variables for where to find the kernel
