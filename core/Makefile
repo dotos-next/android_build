@@ -4326,7 +4326,7 @@ $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 	$(call build-ota-package-target,$@,-k $(KEY_CERT_PAIR) --output_metadata_path $(INTERNAL_OTA_METADATA))
 
 
-CUSTOM_TARGET_PACKAGE := $(PRODUCT_OUT)/dotOS-$(DOT_MOD_VERSION)-$(TARGET_DEVICE)-$(DOT_BUILD_TYPE)-$(shell date -u +%Y%m%d).zip
+TARGET_PACKAGE := $(PRODUCT_OUT)/dotOS-$(DOT_MOD_VERSION)-$(TARGET_DEVICE)-$(DOT_BUILD_TYPE)-$(shell date -u +%Y%m%d).zip
 
 .PHONY: otapackage bacon
 otapackage: $(INTERNAL_OTA_PACKAGE_TARGET)
