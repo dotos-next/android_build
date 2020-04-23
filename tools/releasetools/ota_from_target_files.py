@@ -1323,7 +1323,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
     buildday = target_info.GetBuildProp("ro.build.date")
     securep = target_info.GetBuildProp("ro.build.version.security_patch")
     density = target_info.GetBuildProp("ro.sf.lcd_density",False)
-    device = target_info.GetBuildProp("ro.dot.device")
+    device = target_info.GetBuildProp("ro.dotos.device")
     androidver = target_info.GetBuildProp("ro.build.version.release")
     manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
     sdkver = target_info.GetBuildProp("ro.build.version.sdk")
